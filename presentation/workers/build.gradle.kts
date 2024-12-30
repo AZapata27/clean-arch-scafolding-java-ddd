@@ -2,6 +2,7 @@ group = "com.example.workers"
 
 dependencies {
     implementation(project(":domain"))
+    implementation(project(":application"))
     implementation(project(":infrastructure"))
     implementation("org.springframework.boot:spring-boot-starter")
 }

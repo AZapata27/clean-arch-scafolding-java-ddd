@@ -2,8 +2,9 @@ group = "com.example.entrypoints"
 
 dependencies {
     implementation(project(":domain"))
+    implementation(project(":application"))
     implementation(project(":infrastructure"))
-    implementation("org.springframework.boot:spring-boot-starter")
+    implementation("org.springframework.boot:spring-boot-starter-web")
 }
 
 springBoot {

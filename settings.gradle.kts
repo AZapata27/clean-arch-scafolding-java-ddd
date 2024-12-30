@@ -1,13 +1,14 @@
 rootProject.name = "clean-arch-scafolding-java-ddd"
 
 include("domain")
+include("application")
 include("infrastructure")
 
-include("application:entrypoints")
-findProject(":application:entrypoints")?.name = "entrypoints"
+include("presentation:entrypoints")
+findProject(":presentation:entrypoints")?.name = "entrypoints"
 
-include("application:workers")
-findProject(":application:workers")?.name = "workers"
+include("presentation:workers")
+findProject(":presentation:workers")?.name = "workers"
 
 include("tests:acceptance-test")
 findProject(":tests:acceptance-test")?.name = "acceptance-test"
@@ -17,3 +18,4 @@ findProject(":tests:architecture-test")?.name = "architecture-test"
 
 include("tests:integration-test")
 findProject(":tests:integration-test")?.name = "integration-test"
+
