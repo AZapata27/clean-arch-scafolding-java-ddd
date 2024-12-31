@@ -1,4 +1,4 @@
-package com.example.publishers;
+package com.example.application.shared;
 
 public record PublishResult(String success, String error) {
 }
